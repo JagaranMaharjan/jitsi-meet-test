@@ -19,7 +19,8 @@ rootProject.allprojects {
         google()
         mavenCentral()
         maven {
-            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
+//            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
+            url "https://github.com/JagaranMaharjan/jitsi-maven-repository-test"
         }
         maven { url 'https://www.jitpack.io' }
     }
@@ -53,5 +54,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     // Jitsi Meet from https://github.com/jitsi/jitsi-maven-repository/tree/master/releases/org/jitsi/react/jitsi-meet-sdk
-    implementation ('org.jitsi.react:jitsi-meet-sdk:8.1.2') { transitive = true }
+//    implementation ('org.jitsi.react:jitsi-meet-sdk:8.1.2') { transitive = true }
+    implementation files ('/Users/Jagaran/Desktop/retest/jitsi_meet/omni_jitsi_meet/android/src/libs/sdk-release.aar')
 }
